@@ -9,9 +9,9 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="This page is currently under construction.">
+      content="Contact Marko's Summer Fishing Blog to ask a fishing question, recommend a fishing location, or share a fishing story.">
 
-    <title>Page Under Construction</title>
+    <title>Contact Me | Marko's Summer Fishing Blog</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -36,27 +36,63 @@
 
 </nav>
 
-<main>
 
-    <section class="construction">
-
-        <h2>🚧 This Page Is Under Construction 🚧</h2>
-
-        <p>
-            Thanks for visiting! I'm still working on this page and it
-            isn't quite ready yet.
-        </p>
+<main class="contact-page">
+    <section class="contact-intro">
+        <h2>Contact Me</h2>
 
         <p>
-            Please check back soon as I continue adding new fishing
-            adventures and content.
+            Have a fishing story, location recommendation, or question?
+            Fill out the form below to get in touch.
         </p>
-
-        <p>
-            <a href="index.html">Return to the Home Page</a>
-        </p>
-
     </section>
+
+    <form id="contact-form" novalidate>
+        <div class="form-group">
+            <label for="name">Name:</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label for="reason">Reason for Contacting Me:</label>
+
+            <select id="reason" name="reason" required>
+                <option value="">Select a reason</option>
+                <option value="question">Fishing question</option>
+                <option value="location">Fishing location recommendation</option>
+                <option value="story">Share a fishing story</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+
+            <textarea id="message"
+                      name="message"
+                      rows="6"
+                      required></textarea>
+        </div>
+
+        <button type="submit">Submit Message</button>
+
+        <p id="form-message" aria-live="polite"></p>
+    </form>
+
+</main>
 
 </main>
 
@@ -65,6 +101,8 @@
     <p>2026 Marko's Summer Fishing Blog</p>
 
 </footer>
+
+    <script src="contact.js"></script>
 
 </body>
 
