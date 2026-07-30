@@ -261,7 +261,26 @@ footer{
     border-collapse: collapse;
     background-color: white;
 }
+/* List of blog posts */
+.post-list {
+    padding-left: 0;
+    list-style: none;
+}
 
+.post-list li {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #D6E2DC;
+}
+
+.post-list a {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.post-list p {
+    margin: 6px 0 0;
+}
 
 .data-table th,
 .data-table td {
