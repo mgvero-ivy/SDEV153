@@ -19,6 +19,36 @@ header{
     padding:30px;
 }
 
+/* Website logo and title */
+.site-brand {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.site-logo {
+    width: 110px;
+    height: auto;
+    display: block;
+}
+
+.site-brand h1 {
+    margin: 0;
+}
+
+.site-brand:hover,
+.site-brand:focus {
+    color: white;
+}
+
+.site-brand:focus {
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+
 nav{
 
     background:#3E7D6A;
@@ -209,6 +239,48 @@ footer{
 
 }
 
+/* Images displayed inside blog post text */
+.post-inline-image {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 24px auto;
+}
+
+/* Allows wide tables to scroll on smaller screens */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 24px 0;
+}
+
+/* Reusable styling for informational tables */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    border: 1px solid #D6E2DC;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data-table thead th {
+    background-color: #2F6F5E;
+    color: white;
+}
+
+.data-table tbody th {
+    background-color: #E8F0EC;
+}
+
+
 /* Contact page container */
 .contact-page {
     width: min(90%, 700px);
@@ -316,6 +388,19 @@ footer{
     .form-group {
         margin-bottom: 1.25rem;
     }
+
+    .site-header {
+    padding: 20px 10px;
+    }
+
+    .site-logo {
+        width: 85px;
+    }
+
+    .site-brand h1 {
+        font-size: 1.6rem;
+    }
+
 }
 
 @media (max-width:768px){
